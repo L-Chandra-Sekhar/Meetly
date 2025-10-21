@@ -12,6 +12,8 @@
     "JWT_EXPIRES_IN": "7d",
     "NEXT_PUBLIC_ZEGO_APP_ID": "@zego_app_id",
     "NEXT_PUBLIC_ZEGO_SERVER_SECRET": "@zego_server_secret",
+    "EMAIL_USER": "@email_user",
+    "EMAIL_PASS": "@email_pass",
     "NODE_ENV": "production"
   }
 }
