@@ -22,6 +22,7 @@ export default function MeetingRoom() {
   const router = useRouter();
   const { user } = useAuth();
   const containerRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const zpInstanceRef = useRef<any>(null);
   const [showTimeoutModal, setShowTimeoutModal] = useState(false);
   const [timeLeft, setTimeLeft] = useState(300); // 5 minutes in seconds
@@ -104,12 +105,6 @@ export default function MeetingRoom() {
           showLeavingView: true,
           showScreenSharingButton: true,
           maxUsers: 3,
-          videoResolutionList: [
-            ZegoUIKitPrebuilt.VideoResolution_360P,
-            ZegoUIKitPrebuilt.VideoResolution_180P,
-            ZegoUIKitPrebuilt.VideoResolution_480P,
-            ZegoUIKitPrebuilt.VideoResolution_720P,
-          ],
           videoResolutionDefault: ZegoUIKitPrebuilt.VideoResolution_360P,
           onLeaveRoom: () => {
             // Clean up instance before navigating

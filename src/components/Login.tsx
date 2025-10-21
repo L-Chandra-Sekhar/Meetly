@@ -281,7 +281,7 @@ export default function Login() {
             <form onSubmit={handleForgotPassword} className="space-y-6">
               <div className="text-center mb-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Forgot Password?</h2>
-                <p className="text-gray-600">Enter your email address and we'll send you a verification code</p>
+                <p className="text-gray-600">Enter your email address and we&apos;ll send you a verification code</p>
               </div>
 
               <div>
@@ -326,7 +326,7 @@ export default function Login() {
               <div className="text-center mb-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Verify Your Email</h2>
                 <p className="text-gray-600">
-                  We've sent a 6-digit verification code to <strong>{forgotEmail}</strong>
+                  We&apos;ve sent a 6-digit verification code to <strong>{forgotEmail}</strong>
                 </p>
               </div>
 
@@ -456,7 +456,7 @@ export default function Login() {
           {/* Sign Up Link */}
           <div className="mt-8 text-center">
             <p className="text-gray-600">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link 
                 href="/register" 
                 className="text-indigo-600 hover:text-indigo-700 font-semibold transition-colors duration-200"

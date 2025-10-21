@@ -58,10 +58,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const response = await api.post('/auth/login', { email, password });
       setUser(response.data.user);
       return { success: true, user: response.data.user };
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const axiosError = error as { response?: { data?: { message?: string } } };
       return { 
         success: false, 
-        message: error.response?.data?.message || 'Login failed' 
+        message: axiosError.response?.data?.message || 'Login failed' 
       };
     }
   };
@@ -73,10 +74,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       });
       setUser(response.data.user);
       return { success: true, user: response.data.user };
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const axiosError = error as { response?: { data?: { message?: string } } };
       return { 
         success: false, 
-        message: error.response?.data?.message || 'Registration failed' 
+        message: axiosError.response?.data?.message || 'Registration failed' 
       };
     }
   };

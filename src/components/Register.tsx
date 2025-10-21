@@ -291,7 +291,7 @@ export default function Register() {
               <div className="text-center mb-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Verify Your Email</h2>
                 <p className="text-gray-600">
-                  We've sent a 6-digit verification code to <strong>{formData.email}</strong>
+                  We&apos;ve sent a 6-digit verification code to <strong>{formData.email}</strong>
                 </p>
               </div>
 
