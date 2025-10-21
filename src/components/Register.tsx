@@ -327,7 +327,7 @@ export default function Register() {
                   disabled={loading}
                   className="text-indigo-600 hover:text-indigo-700 font-semibold text-sm transition-colors duration-200 disabled:opacity-50"
                 >
-                  {loading ? 'Sending...' : "Didn't receive the code? Resend"}
+                  {loading ? 'Sending...' : "Didn&apos;t receive the code? Resend"}
                 </button>
               </div>
 

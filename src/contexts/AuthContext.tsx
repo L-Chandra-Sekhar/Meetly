@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       const response = await api.get('/auth/me');
       setUser(response.data.user);
-    } catch (error) {
+    } catch (error: unknown) {
       setUser(null);
     } finally {
       setLoading(false);
@@ -86,7 +86,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const logout = async () => {
     try {
       await api.post('/auth/logout');
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Logout error:', error);
     } finally {
       setUser(null);
