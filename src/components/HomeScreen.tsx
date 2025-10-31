@@ -62,7 +62,7 @@ export default function HomeScreen() {
                 <path d="M17 10.5V7C17 6.45 16.55 6 16 6H4C3.45 6 3 6.45 3 7V17C3 17.55 3.45 18 4 18H16C16.55 18 17 17.55 17 17V13.5L21 17.5V6.5L17 10.5Z" fill="white"/>
               </svg>
             </div>
-            <h1 className="text-lg sm:text-2xl font-bold text-white">MeetFlow</h1>
+            <h1 className="text-lg sm:text-2xl font-bold text-white">Meetly</h1>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-5">
@@ -235,12 +235,12 @@ export default function HomeScreen() {
         <p className="text-white/70 text-sm flex items-center justify-center gap-2">
           Made with <span className="text-red-500 text-base animate-pulse">❤️</span> by{' '}
           <a 
-            href="https://www.linkedin.com/in/theshibaprasad/" 
+            href="https://www.linkedin.com/in/l-chandra-sekhar/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/70 hover:text-white hover:underline font-medium transition-colors duration-200"
           >
-            Shiba Prasad
+            Chandra Sekhar
           </a>
         </p>
       </footer>

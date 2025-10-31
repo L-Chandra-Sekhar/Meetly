@@ -6,7 +6,7 @@ import { AuthProvider } from '@/contexts/AuthContext';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MeetFlow - Video Conferencing App',
+  title: 'Meetly - Video Conferencing App',
   description: 'Connect with crystal-clear video quality and seamless collaboration tools.',
   icons: {
     icon: [
